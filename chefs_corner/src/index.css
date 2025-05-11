@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 33% 98%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 142 28% 42%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 21 58% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 30 10% 92%;
+    --muted-foreground: 30 10% 45%;
+
+    --accent: 35 40% 75%;
+    --accent-foreground: 30 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 85%;
+    --input: 30 10% 85%;
+    --ring: 142 28% 42%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 40 33% 98%;
+    --sidebar-foreground: 30 10% 15%;
+    --sidebar-primary: 142 28% 42%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 30 10% 92%;
+    --sidebar-accent-foreground: 30 10% 15%;
+    --sidebar-border: 30 10% 85%;
+    --sidebar-ring: 142 28% 42%;
+  }
+
+  .dark {
+    --background: 30 15% 12%;
+    --foreground: 40 33% 95%;
+
+    --card: 30 15% 12%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 30 15% 12%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 142 28% 42%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 21 58% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 30 15% 20%;
+    --muted-foreground: 30 10% 70%;
+
+    --accent: 35 40% 25%;
+    --accent-foreground: 40 33% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 33% 95%;
+
+    --border: 30 15% 25%;
+    --input: 30 15% 25%;
+    --ring: 142 28% 42%;
+
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 40 33% 95%; 
+    --sidebar-primary: 142 28% 42%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 30 15% 20%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 30 15% 25%;
+    --sidebar-ring: 142 28% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .recipe-content h2 {
+    @apply text-xl font-semibold mt-6 mb-3;
+  }
+
+  .recipe-content h3 {
+    @apply text-lg font-medium mt-4 mb-2;
+  }
+
+  .recipe-content ul {
+    @apply list-disc pl-5 mb-4 space-y-1;
+  }
+
+  .recipe-content ol {
+    @apply list-decimal pl-5 mb-4 space-y-1;
+  }
+}
